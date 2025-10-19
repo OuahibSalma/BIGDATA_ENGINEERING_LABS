@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  hadoop-master:
+    image: yassern1/hadoop-spark-jupyter:1.0.3
+    container_name: hadoop-master
+    hostname: hadoop-master
+    networks: [hadoop]
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+      - "19888:19888"
+      - "9000:9000"
+    volumes:
+      - "C:/Users/Original Shop/OneDrive/Desktop/ENSIAS/S5/BigData/BigDataLabs_v2/Lab0/hadoop_project:/shared_volume"
+    tty: true
+  hadoop-slave1:
+    image: yassern1/hadoop-spark-jupyter:1.0.3
+    container_name: hadoop-slave1
+    hostname: hadoop-slave1
+    networks: [hadoop]
+    tty: true
+  hadoop-slave2:
+    image: yassern1/hadoop-spark-jupyter:1.0.3
+    container_name: hadoop-slave2
+    hostname: hadoop-slave2
+    networks: [hadoop]
+    tty: true
+networks:
+  hadoop:
+    driver: bridge

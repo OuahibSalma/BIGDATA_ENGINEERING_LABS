@@ -1,0 +1,9 @@
+big	3
+bonjour	3
+count	3
+data	2
+flink	1
+hadoop	4
+mapreduce	1
+spark	2
+word	2
