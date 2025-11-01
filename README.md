@@ -6,3 +6,4 @@
   - `mapreduce_java/` : WordCount Java (Mapper/Reducer/Driver).
   - `streaming_python/` : Hadoop Streaming (mapper.py/reducer.py).
 - **Lab3**: **Implementation de Kafka**
+- **Lab6**: **Implementation de HQL**
